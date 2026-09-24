@@ -1,0 +1,11 @@
+{
+  "source_file": "example.custom",
+  "keyword_mapping_file": "keyword_mapping.json",
+  "default_tokens_file": "default_tokens.json",
+  "lexer_settings": {
+    "ignore_whitespace": true,
+    "ignore_comments": true,
+    "track_newlines": false,
+    "case_sensitive": true
+  }
+}

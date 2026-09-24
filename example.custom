@@ -1,0 +1,21 @@
+// Custom Language Sample Code
+// Demonstrating customized keywords mapping to canonical keywords
+
+purnaank count = 5;
+dashamlav total = 0.0;
+
+/* Compute accumulated values 
+   using custom while-loop (jabtak) */
+jabtak (count > 0) {
+    total = total + count * 1.5;
+    count = count - 1;
+}
+
+// Custom conditional branch (agar / warna)
+agar (total >= 15.0) {
+    dikhao("High score achieved!");
+} warna {
+    dikhao("Normal score.");
+}
+
+wapas 0;

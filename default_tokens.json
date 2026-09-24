@@ -1,0 +1,70 @@
+{
+  "token_types": [
+    "KEYWORD",
+    "IDENTIFIER",
+    "INTEGER",
+    "FLOAT",
+    "STRING",
+    "OPERATOR",
+    "DELIMITER",
+    "COMMENT",
+    "WHITESPACE",
+    "NEWLINE",
+    "UNKNOWN"
+  ],
+  "canonical_keywords": [
+    "if",
+    "else",
+    "while",
+    "for",
+    "int",
+    "float",
+    "string",
+    "print",
+    "return",
+    "true",
+    "false",
+    "def"
+  ],
+  "operators": [
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "=",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!"
+  ],
+  "delimiters": [
+    "(",
+    ")",
+    "{",
+    "}",
+    "[",
+    "]",
+    ";",
+    ",",
+    ":",
+    "."
+  ],
+  "comments": {
+    "single_line": [
+      "//",
+      "#"
+    ],
+    "multi_line_start": "/*",
+    "multi_line_end": "*/"
+  }
+}

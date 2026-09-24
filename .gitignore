@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C / Lex build artifacts (if compiled later)
+lex.yy.c
+*.o
+*.out
+*.exe
+
+# Testing and environment artifacts
+.pytest_cache/
+.env
+.venv/
+env/
+venv/
+
+# Operating system files
+.DS_Store
+Thumbs.db
