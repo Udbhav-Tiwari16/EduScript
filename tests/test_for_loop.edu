@@ -1,0 +1,12 @@
+// For loop test
+
+int total = 0;
+
+for (int k = 1; k <= 5; k = k + 1) {
+    total += k * k;
+}
+
+print("Sum of squares 1..5 (expected 55):");
+print(total);
+
+return 0;

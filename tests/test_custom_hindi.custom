@@ -1,0 +1,20 @@
+// Test custom Hindi keywords in EduScript
+
+purnaank n = 6;
+purnaank fact = 1;
+
+jabtak (n > 1) {
+    fact = fact * n;
+    n = n - 1;
+}
+
+dikhao("Factorial result:");
+dikhao(fact);
+
+agar (fact == 720) {
+    dikhao("Factorial verification passed!");
+} warna {
+    dikhao("Factorial verification failed!");
+}
+
+wapas 0;

@@ -1,0 +1,26 @@
+// Control Flow: nested while, if/else, relational & logical operators
+
+int sum_even = 0;
+int sum_odd = 0;
+int i = 1;
+
+while (i <= 10) {
+    if (i % 2 == 0) {
+        sum_even = sum_even + i;
+    } else {
+        sum_odd = sum_odd + i;
+    }
+    i = i + 1;
+}
+
+print("Sum of evens 1..10 (expected 30):");
+print(sum_even);
+print("Sum of odds 1..10 (expected 25):");
+print(sum_odd);
+
+// Relational and logical test
+if (sum_even > 20 && sum_odd >= 25) {
+    print("Logical AND condition passed!");
+}
+
+return 0;

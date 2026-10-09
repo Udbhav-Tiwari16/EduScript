@@ -1,0 +1,3 @@
+// Semantic Error: Duplicate declaration in same scope
+int x = 10;
+float x = 20.5;

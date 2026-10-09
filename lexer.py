@@ -44,6 +44,40 @@ class Token:
         pos = f"{self.line}:{self.column}"
         return f"{pos:<10} | {self.type:<12} | {self.lexeme:<20} | {canon}"
 
+    def is_keyword(self, canonical_name: Optional[str] = None) -> bool:
+        """Checks if token is a keyword, optionally matching a specific canonical keyword."""
+        if self.type != "KEYWORD":
+            return False
+        if canonical_name is None:
+            return True
+        return self.canonical == canonical_name
+
+    def is_operator(self, op_str: Optional[str] = None) -> bool:
+        """Checks if token is an operator, optionally matching a specific operator string."""
+        if self.type != "OPERATOR":
+            return False
+        if op_str is None:
+            return True
+        return self.lexeme == op_str
+
+    def is_delimiter(self, delim_str: Optional[str] = None) -> bool:
+        """Checks if token is a delimiter, optionally matching a specific delimiter string."""
+        if self.type != "DELIMITER":
+            return False
+        if delim_str is None:
+            return True
+        return self.lexeme == delim_str
+
+    def matches(self, token_type: str, value: Optional[str] = None) -> bool:
+        """Checks token type and optionally canonical keyword or lexeme."""
+        if self.type != token_type:
+            return False
+        if value is None:
+            return True
+        if self.type == "KEYWORD":
+            return self.canonical == value or self.lexeme == value
+        return self.lexeme == value
+
 
 @dataclass
 class LexicalError:

@@ -1,0 +1,14 @@
+// String operations & print test
+
+string greeting = "Hello";
+string target = "EduScript Compiler";
+string combined = greeting + ", Welcome to " + target + "!";
+
+print(combined);
+
+string tag = "Pass";
+if (tag == "Pass") {
+    print("String equality verified.");
+}
+
+return 0;

@@ -1,0 +1,4 @@
+// Lexical Error: Unsupported characters outside strings
+int a = 10;
+int b = 20;
+$ @ ~

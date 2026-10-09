@@ -1,0 +1,38 @@
+// Arithmetic expressions & operator precedence test
+
+int a = 10;
+int b = 3;
+
+int add_res = a + b;
+int sub_res = a - b;
+int mul_res = a * b;
+int div_res = a / b;
+int mod_res = a % b;
+
+// Complex precedence: 10 + 3 * 2 - 4 / 2 = 10 + 6 - 2 = 14
+int prec_res = a + b * 2 - 4 / 2;
+
+// Parentheses override: (10 + 3) * (5 - 3) = 13 * 2 = 26
+int paren_res = (a + b) * (5 - 3);
+
+print("Addition:");
+print(add_res);
+print("Multiplication:");
+print(mul_res);
+print("Modulo:");
+print(mod_res);
+print("Precedence result (expected 14):");
+print(prec_res);
+print("Paren result (expected 26):");
+print(paren_res);
+
+// Compound assignments
+int c = 100;
+c += 25;
+c -= 10;
+c *= 2;
+c /= 5;
+print("Compound result (expected 46):");
+print(c);
+
+return 0;
