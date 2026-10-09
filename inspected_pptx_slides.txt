@@ -1,0 +1,486 @@
+Total slides: 16
+
+==============================
+SLIDE 1
+==============================
+  [Shape 0 TextFrame] left=0.00in, top=0.00in, w=13.33in, h=7.50in
+  [Shape 1 TextFrame] left=1.00in, top=1.00in, w=11.33in, h=0.08in
+  [Shape 2 TextFrame] left=1.00in, top=1.40in, w=4.50in, h=0.45in
+    P0: COMPILER DESIGN LAB - REVIEW 3
+       Runs: 'COMPILER DESIGN '(size=None, bold=None), 'LAB '(size=None, bold=None), '-'(size=None, bold=None), ' '(size=None, bold=None), 'REVIEW 3'(size=None, bold=None)
+  [Shape 3 TextFrame] left=1.00in, top=2.00in, w=11.33in, h=1.80in
+    P0: EduScript: A Customizable LightweightCompiler and Interpreter
+       Runs: 'EduScript'(size=None, bold=None), ': A Customizable Lightweight'(size=None, bold=None), 'Compiler and Interpreter'(size=None, bold=None)
+  [Shape 4 TextFrame] left=1.00in, top=3.90in, w=11.33in, h=0.57in
+    P0: End-to-End Compiler Pipeline: Lexical Analysis → Recursive Descent Parser → AST → Scoped Symbol Table → Semantic Analyzer → Three-Address Code (TAC) → Virtual Machine Interpreter
+       Runs: 'End-to-End Compiler Pipeline: Lexical Analysis → Recursive Descent Parser → AST → Scoped Symbol Table → Semantic Analyzer → Three-Address Code (TAC) → Virtual Machine Interpreter'(size=None, bold=None)
+  [Shape 5 TextFrame] left=1.00in, top=5.10in, w=2.65in, h=1.60in
+    P0: STUDENT NAME
+       Runs: 'STUDENT NAME'(size=None, bold=None)
+    P1: Udbhav Tiwari
+       Runs: 'Udbhav'(size=None, bold=None), ' '(size=None, bold=None), 'Tiwari'(size=None, bold=None)
+  [Shape 6 TextFrame] left=3.90in, top=5.10in, w=2.65in, h=1.60in
+    P0: REGISTER NUMBER
+       Runs: 'REGISTER NUMBER'(size=None, bold=None)
+    P1: 24BCT0328
+       Runs: '24BCT0328'(size=None, bold=None)
+  [Shape 7 TextFrame] left=6.80in, top=5.10in, w=2.65in, h=1.60in
+    P0: COURSE & REVIEW
+       Runs: 'COURSE & REVIEW'(size=None, bold=None)
+    P1: CD Lab • Review 3 (Final)
+       Runs: 'CD Lab • Review 3 (Final)'(size=None, bold=None)
+  [Shape 8 TextFrame] left=9.70in, top=5.10in, w=2.65in, h=1.60in
+    P0: PROJECT TYPE
+       Runs: 'PROJECT TYPE'(size=None, bold=None)
+    P1: Individual Project
+       Runs: 'Individual Project'(size=None, bold=None)
+
+==============================
+SLIDE 2
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.78in, w=11.73in, h=0.65in
+    P0: Project Overview & Complete Compiler Pipeline
+       Runs: 'Project Overview & Complete Compiler Pipeline'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.60in, w=5.60in, h=5.30in
+  [Shape 3 TextFrame] left=1.00in, top=1.75in, w=5.20in, h=5.00in
+    P0: Complete 5-Stage Compiler Pipeline
+       Runs: 'Complete 5-Stage Compiler Pipeline'(size=None, bold=None)
+    P1: 1. Lexical Analysis (lexer.py): Tokenizes raw source with exact line/col tracking and normalizes custom keywords (agar, jabtak, purnaank, etc.) via JSON mappings.
+       Runs: '1. Lexical Analysis (lexer.py): '(size=13.0, bold=True), 'Tokenizes raw source with exact line/col tracking and normalizes custom keywords (agar, jabtak, purnaank, etc.) via JSON mappings.'(size=13.0, bold=False)
+    P2: 2. Syntax Analysis (parser.py): Recursive descent parsing with full precedence climbing; constructs structured Abstract Syntax Trees with panic-mode recovery.
+       Runs: '2. Syntax Analysis (parser.py): '(size=13.0, bold=True), 'Recursive descent parsing with full precedence climbing; constructs structured Abstract Syntax Trees with panic-mode recovery.'(size=13.0, bold=False)
+    P3: 3. Semantic Analysis (semantic_analyzer.py): Enforces static type checking, scoped symbol table lookups, variable shadowing, and diagnostic validation.
+       Runs: '3. Semantic Analysis (semantic_analyzer.py): '(size=13.0, bold=True), 'Enforces static type checking, scoped symbol table lookups, variable shadowing, and diagnostic validation.'(size=13.0, bold=False)
+    P4: 4. Intermediate Code (tac_generator.py): Emits linearized Three-Address Code (TAC) with temporary registers (t0, t1...) and jump labels (L0, L1...).
+       Runs: '4. Intermediate Code (tac_generator.py): '(size=13.0, bold=True), 'Emits linearized Three-Address Code (TAC) with temporary registers (t0, t1...) and jump labels (L0, L1...).'(size=13.0, bold=False)
+    P5: 5. Execution Engine (interpreter.py): Custom TAC Virtual Machine instruction dispatcher, plus auxiliary AST Tree-Walk execution mode.
+       Runs: '5. Execution Engine (interpreter.py): '(size=13.0, bold=True), 'Custom TAC Virtual Machine instruction dispatcher, plus auxiliary AST Tree-Walk execution mode.'(size=13.0, bold=False)
+  [Shape 4 TextFrame] left=6.80in, top=1.60in, w=5.73in, h=5.30in
+  [Shape 5 TextFrame] left=7.00in, top=1.75in, w=5.33in, h=5.00in
+    P0: Key Implementation Highlights
+       Runs: 'Key Implementation Highlights'(size=None, bold=None)
+    P1: • 100% Implemented & Tested: Zero mockups or placeholders; fully working end-to-end interpreter executing real programs.
+       Runs: '• 100% Implemented & Tested: '(size=13.0, bold=True), 'Zero mockups or placeholders; fully working end-to-end interpreter executing real programs.'(size=13.0, bold=False)
+    P2: • Multilingual/Custom Keywords: Supports native Hindi keywords (purnaank, agar, warna, jabtak, dikhao, wapas) mapped to canonical constructs.
+       Runs: '• Multilingual/Custom Keywords: '(size=13.0, bold=True), 'Supports native Hindi keywords (purnaank, agar, warna, jabtak, dikhao, wapas) mapped to canonical constructs.'(size=13.0, bold=False)
+    P3: • Comprehensive Test Suite: 12 automated test cases covering valid programs, Hindi keywords, arithmetic, for/while loops, and error diagnostics.
+       Runs: '• Comprehensive Test Suite: '(size=13.0, bold=True), '12 automated test cases covering valid programs, Hindi keywords, arithmetic, for/while loops, and error diagnostics.'(size=13.0, bold=False)
+    P4: • Academic Transparency: CLI flags (--tokens, --ast, --symbols, --tac, --all) allow live inspection of every single compiler transformation stage.
+       Runs: '• Academic Transparency: '(size=13.0, bold=True), 'CLI flags (--tokens, --ast, --symbols, --tac, --all) allow live inspection of every single compiler transformation stage.'(size=13.0, bold=False)
+    P5: • Zero External Dependencies: Built natively with Python standard library for maximum portability and educational clarity.
+       Runs: '• Zero External Dependencies: '(size=13.0, bold=True), 'Built natively with Python standard library for maximum portability and educational clarity.'(size=13.0, bold=False)
+
+==============================
+SLIDE 3
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.78in, w=11.73in, h=0.65in
+    P0: System Architecture & Inter-Module Data Flow
+       Runs: 'System Architecture & Inter-Module Data Flow'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.60in, w=2.80in, h=5.30in
+  [Shape 3 TextFrame] left=0.95in, top=1.75in, w=2.50in, h=5.00in
+    P0: STAGE 1: SCANNER
+       Runs: 'STAGE 1: SCANNER'(size=None, bold=None)
+    P1: lexer.py
+       Runs: 'lexer.py'(size=None, bold=None)
+    P2: Input: .custom / .edu source
+       Runs: 'Input: .custom / .edu source'(size=None, bold=None)
+    P3: Output: List[Token]
+       Runs: 'Output: List[Token]'(size=None, bold=None)
+    P4: • JSON keyword mapping
+       Runs: '• JSON keyword mapping'(size=None, bold=None)
+    P5: • Exact Line:Col tracking
+       Runs: '• Exact Line:Col tracking'(size=None, bold=None)
+    P6: • Non-fatal lexical errors
+       Runs: '• Non-fatal lexical errors'(size=None, bold=None)
+  [Shape 4 TextFrame] left=3.78in, top=1.60in, w=2.80in, h=5.30in
+  [Shape 5 TextFrame] left=3.93in, top=1.75in, w=2.50in, h=5.00in
+    P0: STAGE 2: PARSER
+       Runs: 'STAGE 2: PARSER'(size=None, bold=None)
+    P1: parser.py & ast_nodes.py
+       Runs: 'parser.py & ast_nodes.py'(size=None, bold=None)
+    P2: Input: List[Token]
+       Runs: 'Input: List[Token]'(size=None, bold=None)
+    P3: Output: Program AST Node
+       Runs: 'Output: Program AST Node'(size=None, bold=None)
+    P4: • Recursive descent parser
+       Runs: '• Recursive descent parser'(size=None, bold=None)
+    P5: • Operator precedence
+       Runs: '• Operator precedence'(size=None, bold=None)
+    P6: • Panic-mode recovery
+       Runs: '• Panic-mode recovery'(size=None, bold=None)
+  [Shape 6 TextFrame] left=6.76in, top=1.60in, w=2.80in, h=5.30in
+  [Shape 7 TextFrame] left=6.91in, top=1.75in, w=2.50in, h=5.00in
+    P0: STAGE 3: SEMANTIC
+       Runs: 'STAGE 3: SEMANTIC'(size=None, bold=None)
+    P1: symbol_table.py & analyzer
+       Runs: 'symbol_table.py & analyzer'(size=None, bold=None)
+    P2: Input: Program AST
+       Runs: 'Input: Program AST'(size=None, bold=None)
+    P3: Output: Validated AST + SymTab
+       Runs: 'Output: Validated AST + SymTab'(size=None, bold=None)
+    P4: • Lexical scope hierarchy
+       Runs: '• Lexical scope hierarchy'(size=None, bold=None)
+    P5: • Static type compatibility
+       Runs: '• Static type compatibility'(size=None, bold=None)
+    P6: • Scope & symbol checking
+       Runs: '• Scope & symbol checking'(size=None, bold=None)
+  [Shape 8 TextFrame] left=9.74in, top=1.60in, w=2.80in, h=5.30in
+  [Shape 9 TextFrame] left=9.89in, top=1.75in, w=2.50in, h=5.00in
+    P0: STAGE 4 & 5: IR & VM
+       Runs: 'STAGE 4 & 5: IR & VM'(size=None, bold=None)
+    P1: tac_generator & interpreter
+       Runs: 'tac_generator & interpreter'(size=None, bold=None)
+    P2: Input: Validated AST
+       Runs: 'Input: Validated AST'(size=None, bold=None)
+    P3: Output: Execution & Output
+       Runs: 'Output: Execution & Output'(size=None, bold=None)
+    P4: • 3-Address Code generation
+       Runs: '• 3-Address Code generation'(size=None, bold=None)
+    P5: • Virtual Machine execution
+       Runs: '• Virtual Machine execution'(size=None, bold=None)
+    P6: • Runtime safety & output
+       Runs: '• Runtime safety & output'(size=None, bold=None)
+
+==============================
+SLIDE 4
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.66in, w=11.73in, h=0.65in
+    P0: Phase 1: Lexical Analysis & Custom Keyword Normalization
+       Runs: 'Phase 1: Lexical Analysis & Custom Keyword Normalization'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.41in, w=5.20in, h=5.30in
+  [Shape 3 TextFrame] left=1.00in, top=2.06in, w=4.80in, h=5.00in
+    P0: Lexer Design & Keyword Normalization
+       Runs: 'Lexer'(size=None, bold=None), ' Design & Keyword Normalization'(size=None, bold=None)
+    P1: • Data-Driven Lexer (lexer.py): Loads token specifications from default_tokens.json and keyword aliases from keyword_mapping.json.
+       Runs: '• Data-Driven '(size=13.0, bold=True), 'Lexer'(size=13.0, bold=True), ' (lexer.py): '(size=13.0, bold=True), 'Loads token specifications from '(size=13.0, bold=False), 'default_tokens.json'(size=13.0, bold=False), ' and keyword aliases from '(size=13.0, bold=False), 'keyword_mapping.json'(size=13.0, bold=False), '.'(size=13.0, bold=False)
+    P2: • Transparent Normalization: Custom words (purnaank, jabtak, agar) are converted into canonical tokens (int, while, if) while preserving original lexemes.
+       Runs: '• Transparent Normalization: '(size=13.0, bold=True), 'Custom words ('(size=13.0, bold=False), 'purnaank'(size=13.0, bold=False), ', '(size=13.0, bold=False), 'jabtak'(size=13.0, bold=False), ', agar) are converted into canonical tokens ('(size=13.0, bold=False), 'int'(size=13.0, bold=False), ', while, if) while preserving original lexemes.'(size=13.0, bold=False)
+    P3: • Longest-Match Operators: Multi-character operators (==, !=, <=, >=, +=, -=) sorted by length to match before single-character operators (=, <).
+       Runs: '• Longest-Match Operators: '(size=13.0, bold=True), 'Multi-character operators (==, !=, <=, >=, +=, -=) sorted by length to match before single-character operators (=, <).'(size=13.0, bold=False)
+    P4: • Position Tracking: Tracks exact 1-based line and column coordinates for every token, enabling pinpoint compiler error messages.
+       Runs: '• Position Tracking: '(size=13.0, bold=True), 'Tracks exact 1-based line and column coordinates for every token, enabling pinpoint compiler error messages.'(size=13.0, bold=False)
+  [Shape 4 TextFrame] left=6.20in, top=1.31in, w=6.33in, h=5.30in
+  [Shape 5 Picture] left=6.74in, top=1.41in, w=5.25in, h=5.09in
+
+==============================
+SLIDE 5
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.59in, w=11.73in, h=0.65in
+    P0: Phase 2: Syntax Analysis & Abstract Syntax Tree (AST)
+       Runs: 'Phase 2: Syntax Analysis & Abstract Syntax Tree (AST)'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.60in, w=5.20in, h=5.30in
+  [Shape 3 TextFrame] left=1.00in, top=2.17in, w=4.80in, h=5.00in
+    P0: Recursive Descent Parser (parser.py)
+       Runs: 'Recursive Descent Parser (parser.py)'(size=None, bold=None)
+    P1: • Precedence Climbing: Mathematical operator precedence enforced directly through grammar function hierarchy without shift-reduce ambiguities.
+       Runs: '• Precedence Climbing: '(size=13.0, bold=True), 'Mathematical operator precedence enforced directly through grammar function hierarchy without shift-reduce ambiguities.'(size=13.0, bold=False)
+    P2: • Modular AST Nodes (ast_nodes.py): Strongly-typed nodes for Program, VarDecl, IfStmt, WhileStmt, ForStmt, BinaryExpr, AssignExpr, etc.
+       Runs: '• Modular AST Nodes (ast_nodes.py): '(size=13.0, bold=True), 'Strongly-typed nodes for Program, '(size=13.0, bold=False), 'VarDecl'(size=13.0, bold=False), ', '(size=13.0, bold=False), 'IfStmt'(size=13.0, bold=False), ', '(size=13.0, bold=False), 'WhileStmt'(size=13.0, bold=False), ', '(size=13.0, bold=False), 'ForStmt'(size=13.0, bold=False), ', '(size=13.0, bold=False), 'BinaryExpr'(size=13.0, bold=False), ', '(size=13.0, bold=False), 'AssignExpr'(size=13.0, bold=False), ', etc.'(size=13.0, bold=False)
+    P3: • Visitor Pattern Support: AST nodes accept visitors (accept(self, visitor)) enabling clean decoupled passes for Semantics, TAC IR, and Pretty Printing.
+       Runs: '• Visitor Pattern Support: '(size=13.0, bold=True), 'AST nodes accept visitors (accept(self, visitor)) enabling clean decoupled passes for Semantics, TAC IR, and Pretty Printing.'(size=13.0, bold=False)
+    P4: • Panic-Mode Recovery: Synchronizes at statement boundaries (semicolons, closing braces) to catch subsequent syntax errors without crashing.
+       Runs: '• Panic-Mode Recovery: '(size=13.0, bold=True), 'Synchronizes at statement boundaries (semicolons, closing braces) to catch subsequent syntax errors without crashing.'(size=13.0, bold=False)
+  [Shape 4 TextFrame] left=6.29in, top=1.02in, w=6.24in, h=6.40in
+  [Shape 5 Picture] left=6.64in, top=1.24in, w=5.54in, h=6.02in
+
+==============================
+SLIDE 6
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.78in, w=11.73in, h=0.65in
+    P0: Phase 3: Scoped Symbol Table & Semantic Analysis
+       Runs: 'Phase 3: Scoped Symbol Table & Semantic Analysis'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.43in, w=5.20in, h=5.30in
+  [Shape 3 TextFrame] left=1.00in, top=2.02in, w=4.80in, h=5.00in
+    P0: Semantic Validation & Scope Engine
+       Runs: 'Semantic Validation & Scope Engine'(size=None, bold=None)
+    P1: • Scoped Symbol Table (symbol_table.py): Nested Scope tree maintaining identifier name, data type (int, float, string, bool), scope level, and initialization status.
+       Runs: '• Scoped Symbol Table (symbol_table.py): '(size=13.0, bold=True), 'Nested Scope tree maintaining identifier name, data type ('(size=13.0, bold=False), 'int'(size=13.0, bold=False), ', float, string, '(size=13.0, bold=False), 'bool'(size=13.0, bold=False), '), scope level, and initialization status.'(size=13.0, bold=False)
+    P2: • Variable Shadowing: Inner block scopes can shadow outer symbols; symbol lookups climb the parent scope chain upwards to global scope.
+       Runs: '• Variable Shadowing: '(size=13.0, bold=True), 'Inner block scopes can shadow outer symbols; symbol lookups climb the parent scope chain upwards to global scope.'(size=13.0, bold=False)
+    P3: • Type Checking (semantic_analyzer.py): Enforces static type compatibility; allows widening int -> float; validates relational & logical operands.
+       Runs: '• Type Checking (semantic_analyzer.py): '(size=13.0, bold=True), 'Enforces static type compatibility; allows widening '(size=13.0, bold=False), 'int'(size=13.0, bold=False), ' -> float; validates relational & logical operands.'(size=13.0, bold=False)
+    P4: • Semantic Error Trapping: Flags duplicate declarations in identical scope, undeclared identifier usage, and uninitialized variable reads.
+       Runs: '• Semantic Error Trapping: '(size=13.0, bold=True), 'Flags duplicate declarations in identical scope, undeclared identifier usage, and uninitialized variable reads.'(size=13.0, bold=False)
+  [Shape 4 TextFrame] left=6.20in, top=1.43in, w=6.33in, h=5.30in
+  [Shape 5 Picture] left=6.36in, top=2.02in, w=5.92in, h=4.12in
+
+==============================
+SLIDE 7
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.64in, w=11.73in, h=0.65in
+    P0: Phase 4: Intermediate Code Generation (Three-Address Code)
+       Runs: 'Phase 4: Intermediate Code Generation (Three-Address Code)'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.60in, top=1.34in, w=5.20in, h=5.30in
+  [Shape 3 TextFrame] left=1.00in, top=1.75in, w=4.80in, h=5.00in
+    P0: Three-Address Code (tac_generator.py)
+       Runs: 'Three-Address Code (tac_generator.py)'(size=None, bold=None)
+    P1: • Linearized Quadruple IR: Lowers high-level nested AST nodes into elementary 3-address instructions with at most 1 operator per instruction.
+       Runs: '• Linearized Quadruple IR: '(size=13.0, bold=True), 'Lowers high-level nested AST nodes into elementary 3-address instructions with at most 1 operator per instruction.'(size=13.0, bold=False)
+    P2: • Register & Label Generation: Emits temporary registers (t0, t1, t2...) for intermediate sub-expressions and symbolic jump labels (L_while_start_0, L_else_2...).
+       Runs: '• Register & Label Generation: '(size=13.0, bold=True), 'Emits temporary registers (t0, t1, t2...) for intermediate sub-expressions and symbolic jump labels (L_while_start_0, L_else_2...).'(size=13.0, bold=False)
+    P3: • Complete Instruction Set: Supports ASSIGN, ADD, SUB, MUL, DIV, MOD, EQ, NEQ, LT, LE, GT, GE, AND, OR, NOT, GOTO, IF_FALSE, IF_TRUE, PRINT, RETURN.
+       Runs: '• Complete Instruction Set: '(size=13.0, bold=True), 'Supports ASSIGN, ADD, SUB, MUL, DIV, MOD, EQ, NEQ, LT, LE, GT, GE, AND, OR, NOT, GOTO, IF_FALSE, IF_TRUE, PRINT, RETURN.'(size=13.0, bold=False)
+    P4: • Clear Machine Abstraction: Isolates front-end language syntax from the underlying execution runtime.
+       Runs: '• Clear Machine Abstraction: '(size=13.0, bold=True), 'Isolates front-end language syntax from the underlying execution runtime.'(size=13.0, bold=False)
+  [Shape 4 TextFrame] left=6.20in, top=1.60in, w=6.33in, h=5.30in
+  [Shape 5 Picture] left=6.47in, top=1.13in, w=6.43in, h=6.24in
+
+==============================
+SLIDE 8
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.54in, w=11.73in, h=0.65in
+    P0: Phase 5: Execution Engine & TAC Virtual Machine
+       Runs: 'Phase 5: Execution Engine & TAC Virtual Machine'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.19in, w=5.20in, h=5.30in
+  [Shape 3 TextFrame] left=1.00in, top=2.07in, w=4.80in, h=5.00in
+    P0: Execution Engine (interpreter.py)
+       Runs: 'Execution Engine (interpreter.py)'(size=None, bold=None)
+    P1: • TAC Virtual Machine (Primary): Dispatches TAC instructions step-by-step with program counter management, environment register state, and O(1) label index lookups.
+       Runs: '• TAC Virtual Machine (Primary): '(size=13.0, bold=True), 'Dispatches TAC instructions step-by-step with program counter management, environment register state, and O(1) label index lookups.'(size=13.0, bold=False)
+    P2: • AST Tree-Walk Interpreter (Auxiliary): Direct AST traversal execution engine available via --ast-run flag for comparative demonstration in vivas.
+       Runs: '• AST Tree-Walk Interpreter (Auxiliary): '(size=13.0, bold=True), 'Direct AST traversal execution engine available via --'(size=13.0, bold=False), 'ast'(size=13.0, bold=False), '-run flag for comparative demonstration in '(size=13.0, bold=False), 'vivas'(size=13.0, bold=False), '.'(size=13.0, bold=False)
+    P3: • Runtime Error Trapping: Gracefully catches and reports division/modulo by zero and guards against infinite execution loops via max-step thresholds.
+       Runs: '• Runtime Error Trapping: '(size=13.0, bold=True), 'Gracefully catches and reports division/modulo by zero and guards against infinite execution loops via max-step thresholds.'(size=13.0, bold=False)
+    P4: • Program Exit & Output: Captures stdout cleanly in execution buffers and propagates exit return codes (0 on success).
+       Runs: '• Program Exit & Output: '(size=13.0, bold=True), 'Captures '(size=13.0, bold=False), 'stdout'(size=13.0, bold=False), ' cleanly in execution buffers and propagates exit return codes (0 on success).'(size=13.0, bold=False)
+  [Shape 4 TextFrame] left=6.20in, top=1.19in, w=6.33in, h=5.12in
+  [Shape 5 Picture] left=6.23in, top=2.07in, w=6.28in, h=3.37in
+
+==============================
+SLIDE 9
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.59in, w=11.73in, h=0.65in
+    P0: Live End-to-End Execution Evidence (All 5 Stages)
+       Runs: 'Live End-to-End Execution Evidence (All 5 Stages)'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.24in, w=4.80in, h=5.30in
+  [Shape 3 TextFrame] left=1.00in, top=1.75in, w=4.40in, h=5.00in
+    P0: Full Pipeline Execution: example.custom
+       Runs: 'Full Pipeline Execution: example.custom'(size=None, bold=None)
+    P1: • Source Code Tested: Custom Hindi keywords script executing while loops (jabtak), float arithmetic (dashamlav), and conditional branching (agar/warna).
+       Runs: '• Source Code Tested: '(size=13.0, bold=True), 'Custom Hindi keywords script executing while loops (jabtak), float arithmetic (dashamlav), and conditional branching (agar/warna).'(size=13.0, bold=False)
+    P2: • Executed Command: python main.py example.custom --all
+       Runs: '• Executed Command: '(size=13.0, bold=True), 'python main.py example.custom --all'(size=13.0, bold=False)
+    P3: • Complete Pipeline Verification: Simultaneously outputs Token Stream (56 tokens) → AST Tree → Scoped Symbol Table → TAC (20 instructions) → Program Output ('High score achieved!').
+       Runs: '• Complete Pipeline Verification: '(size=13.0, bold=True), "Simultaneously outputs Token Stream (56 tokens) → AST Tree → Scoped Symbol Table → TAC (20 instructions) → Program Output ('High score achieved!')."(size=13.0, bold=False)
+    P4: • Verification Status: Zero lexical, syntax, or semantic errors; exited with return code 0.
+       Runs: '• Verification Status: '(size=13.0, bold=True), 'Zero lexical, syntax, or semantic errors; exited with return code 0.'(size=13.0, bold=False)
+  [Shape 4 TextFrame] left=7.35in, top=0.56in, w=5.67in, h=6.85in
+  [Shape 5 Picture] left=7.74in, top=0.76in, w=4.88in, h=6.46in
+
+==============================
+SLIDE 10
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.78in, w=11.73in, h=0.65in
+    P0: Robust Multi-Phase Error Diagnostic Architecture
+       Runs: 'Robust Multi-Phase Error Diagnostic Architecture'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.60in, w=5.73in, h=2.60in
+  [Shape 3 TextFrame] left=0.95in, top=1.70in, w=5.40in, h=0.60in
+    P0: 1. LEXICAL ERROR (Phase 1)
+       Runs: '1. LEXICAL ERROR (Phase 1)'(size=None, bold=None)
+    P1: Unsupported character '$ @ ~' caught with line/col location.
+       Runs: "Unsupported character '$ @ ~' caught with line/col location."(size=None, bold=None)
+  [Shape 4 TextFrame] left=6.80in, top=1.60in, w=5.73in, h=2.60in
+  [Shape 5 TextFrame] left=6.95in, top=1.70in, w=5.40in, h=0.60in
+    P0: 2. SYNTAX ERROR (Phase 2)
+       Runs: '2. SYNTAX ERROR (Phase 2)'(size=None, bold=None)
+    P1: Malformed expression 'if (a > 5 {' caught by recursive parser.
+       Runs: "Malformed expression 'if (a > 5 {' caught by recursive parser."(size=None, bold=None)
+  [Shape 6 TextFrame] left=0.80in, top=4.30in, w=5.73in, h=2.60in
+  [Shape 7 TextFrame] left=0.95in, top=4.40in, w=5.40in, h=0.60in
+    P0: 3. SEMANTIC ERROR (Phase 3)
+       Runs: '3. SEMANTIC ERROR (Phase 3)'(size=None, bold=None)
+    P1: Type mismatch assigning string to integer variable 'count'.
+       Runs: "Type mismatch assigning string to integer variable 'count'."(size=None, bold=None)
+  [Shape 8 TextFrame] left=6.80in, top=4.30in, w=5.73in, h=2.60in
+  [Shape 9 TextFrame] left=6.95in, top=4.40in, w=5.40in, h=0.60in
+    P0: 4. RUNTIME ERROR (Phase 5)
+       Runs: '4. RUNTIME ERROR (Phase 5)'(size=None, bold=None)
+    P1: Division by zero 'a / b' safely trapped at VM execution time.
+       Runs: "Division by zero 'a / b' safely trapped at VM execution time."(size=None, bold=None)
+  [Shape 10 Picture] left=0.95in, top=2.13in, w=4.90in, h=2.25in
+  [Shape 11 Picture] left=7.01in, top=2.13in, w=4.65in, h=2.00in
+  [Shape 12 Picture] left=0.26in, top=5.00in, w=6.43in, h=1.82in
+  [Shape 13 Picture] left=6.95in, top=4.81in, w=5.20in, h=2.55in
+
+==============================
+SLIDE 11
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.78in, w=11.73in, h=0.65in
+    P0: Automated Test Suite & 100% Verification Proof
+       Runs: 'Automated Test Suite & 100% Verification Proof'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.60in, w=5.50in, h=5.30in
+  [Shape 3 TextFrame] left=1.00in, top=2.17in, w=5.10in, h=5.00in
+    P0: Verified 12-Case Test Matrix
+       Runs: 'Verified 12-Case Test Matrix'(size=None, bold=None)
+    P1: ✓ 1. Custom Hindi (example.custom): Loops, floats, if/else [PASSED]
+       Runs: '✓ 1. Custom Hindi ('(size=9.5, bold=True), 'example.custom'(size=9.5, bold=True), '): '(size=9.5, bold=True), 'Loops, floats, if/else '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P2: ✓ 2. Hindi Factorial: Loop accumulator, compare [PASSED]
+       Runs: '✓ 2. Hindi Factorial: '(size=9.5, bold=True), 'Loop accumulator, compare '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P3: ✓ 3. Arithmetic & Precedence: Ops (+,-,*,/,%), comp. assign [PASSED]
+       Runs: '✓ 3. Arithmetic & Precedence: '(size=9.5, bold=True), 'Ops (+,-,*,/,%), comp. assign '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P4: ✓ 4. Control Flow & Logic: While, modulo, &&, || [PASSED]
+       Runs: '✓ 4. Control Flow & Logic: '(size=9.5, bold=True), 'While, modulo, &&, || '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P5: ✓ 5. For Loop: Init, cond, update loop [PASSED]
+       Runs: '✓ 5. For Loop: '(size=9.5, bold=True), 'Init'(size=9.5, bold=None), ', '(size=9.5, bold=None), 'cond'(size=9.5, bold=None), ', update loop '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P6: ✓ 6. String Operations: Concatenation, equality [PASSED]
+       Runs: '✓ 6. String Operations: '(size=9.5, bold=True), 'Concatenation, equality '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P7: ✓ 7. Semantic: Type Mismatch: Exit code 3 verified [PASSED]
+       Runs: '✓ 7. Semantic: Type Mismatch: '(size=9.5, bold=True), 'Exit code 3 verified '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P8: ✓ 8. Semantic: Undeclared Var: Exit code 3 verified [PASSED]
+       Runs: '✓ 8. Semantic: Undeclared '(size=9.5, bold=True), 'Var'(size=9.5, bold=True), ': '(size=9.5, bold=True), 'Exit code 3 verified '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P9: ✓ 9. Semantic: Duplicate Decl: Exit code 3 verified [PASSED]
+       Runs: '✓ 9. Semantic: Duplicate '(size=9.5, bold=True), 'Decl'(size=9.5, bold=True), ': '(size=9.5, bold=True), 'Exit code 3 verified '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P10: ✓ 10. Syntax: Malformed Expr: Exit code 2 verified [PASSED]
+       Runs: '✓ 10. Syntax: Malformed '(size=9.5, bold=True), 'Expr'(size=9.5, bold=True), ': '(size=9.5, bold=True), 'Exit code 2 verified '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P11: ✓ 11. Lexical: Bad Characters: Exit code 1 verified [PASSED]
+       Runs: '✓ 11. Lexical: Bad Characters: '(size=9.5, bold=True), 'Exit code 1 verified '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+    P12: ✓ 12. Runtime: Zero Division: Exit code 4 verified [PASSED]
+       Runs: '✓ 12. Runtime: Zero Division: '(size=9.5, bold=True), 'Exit code 4 verified '(size=9.5, bold=None), '[PASSED]'(size=9.5, bold=True)
+  [Shape 4 TextFrame] left=6.50in, top=1.60in, w=6.03in, h=5.30in
+  [Shape 5 Picture] left=6.59in, top=1.99in, w=5.84in, h=4.76in
+
+==============================
+SLIDE 12
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.78in, w=11.73in, h=0.65in
+    P0: Compliance Matrix: Planned Proposal vs Final Implementation
+       Runs: 'Compliance Matrix: Planned Proposal vs Final Implementation'(size=None, bold=None)
+  [Shape 2 Table] 9 rows x 4 cols
+    Row 0: Component | Review 1 Proposal Target | Final Review 3 Delivery | Status
+    Row 1: Lexical Analyzer | Data-driven tokenization with custom keywords | Dynamic JSON-driven lexer with line/col tracking & Hindi mappings | 100% COMPLETE
+    Row 2: Parser | Recursive descent parser for imperative constructs | Full recursive descent with precedence climbing & error recovery | 100% COMPLETE
+    Row 3: AST | Modular AST node hierarchy with visitor pattern | Typed AST nodes with visitor interface & visual ASCII tree printer | 100% COMPLETE
+    Row 4: Symbol Table | Scoped variable table with type records | Hierarchical Scope trees, variable shadowing & initialization status | 100% COMPLETE
+    Row 5: Semantic Analyzer | Type checking & undeclared identifier detection | Static type inference, widening int->float, duplicate decl checks | 100% COMPLETE
+    Row 6: Intermediate Code | Three-Address Code (TAC) generation | Linearized TAC quadruples with temporaries (t0..) and labels (L0..) | 100% COMPLETE
+    Row 7: Execution Engine | Interpreter executing EduScript code | TAC Virtual Machine + auxiliary AST Tree-Walk Interpreter | 100% COMPLETE
+    Row 8: Testing Suite | Automated validation of language features | 12 automated test cases with 100.0% pass rate & CI-ready runner | 100% COMPLETE
+
+==============================
+SLIDE 13
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.78in, w=11.73in, h=0.65in
+    P0: Technical Innovations & Engineering Highlights
+       Runs: 'Technical Innovations & Engineering Highlights'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.60in, w=5.75in, h=2.50in
+  [Shape 3 TextFrame] left=1.00in, top=1.75in, w=5.35in, h=2.20in
+    P0: 1. Dynamic JSON Keyword Customization
+       Runs: '1. Dynamic JSON Keyword Customization'(size=None, bold=None)
+    P1: Enables localized / multilingual programming (e.g. Hindi keywords agar, jabtak, purnaank) without altering parser grammar rules. The Lexer normalizes custom aliases to canonical tags transparently.
+       Runs: 'Enables localized / multilingual programming (e.g. Hindi keywords agar, jabtak, purnaank) without altering parser grammar rules. The Lexer normalizes custom aliases to canonical tags transparently.'(size=None, bold=None)
+  [Shape 4 TextFrame] left=6.75in, top=1.60in, w=5.75in, h=2.50in
+  [Shape 5 TextFrame] left=6.95in, top=1.75in, w=5.35in, h=2.20in
+    P0: 2. Total Academic Transparency
+       Runs: '2. Total Academic Transparency'(size=None, bold=None)
+    P1: Unlike black-box compilers, every intermediate stage (Tokens, AST, Symbol Table, TAC IR) is fully inspectable via dedicated CLI flags (--tokens, --ast, --symbols, --tac, --all).
+       Runs: 'Unlike black-box compilers, every intermediate stage (Tokens, AST, Symbol Table, TAC IR) is fully '(size=None, bold=None), 'inspectable'(size=None, bold=None), ' via dedicated CLI flags (--tokens, --'(size=None, bold=None), 'ast'(size=None, bold=None), ', --symbols, --'(size=None, bold=None), 'tac'(size=None, bold=None), ', --all).'(size=None, bold=None)
+  [Shape 6 TextFrame] left=0.80in, top=4.30in, w=5.75in, h=2.50in
+  [Shape 7 TextFrame] left=1.00in, top=4.45in, w=5.35in, h=2.20in
+    P0: 3. Dual-Execution Architecture
+       Runs: '3. Dual-Execution Architecture'(size=None, bold=None)
+    P1: Features both a Three-Address Code Virtual Machine (executing linearized IR) and an AST Tree-Walk Interpreter, allowing direct comparison of IR vs AST execution in compiler vivas.
+       Runs: 'Features both a Three-Address Code Virtual Machine (executing linearized IR) and an AST Tree-Walk Interpreter, allowing direct comparison of IR vs AST execution in compiler vivas.'(size=None, bold=None)
+  [Shape 8 TextFrame] left=6.75in, top=4.30in, w=5.75in, h=2.50in
+  [Shape 9 TextFrame] left=6.95in, top=4.45in, w=5.35in, h=2.20in
+    P0: 4. Production-Grade Diagnostic Pinpointing
+       Runs: '4. Production-Grade Diagnostic Pinpointing'(size=None, bold=None)
+    P1: Multi-phase error trapping with exact line and column coordinates, detailed error classification (Lexical, Syntax, TypeError, UndeclaredVariable, RuntimeError), and panic-mode recovery.
+       Runs: 'Multi-phase error trapping with exact line and column coordinates, detailed error classification (Lexical, Syntax, TypeError, UndeclaredVariable, RuntimeError), and panic-mode recovery.'(size=None, bold=None)
+
+==============================
+SLIDE 14
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.78in, w=11.73in, h=0.65in
+    P0: Compiler Design Viva Q&A — Key Technical Answers
+       Runs: 'Compiler Design Viva Q&A — Key Technical Answers'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.60in, w=11.73in, h=1.20in
+  [Shape 3 TextFrame] left=1.00in, top=1.68in, w=11.33in, h=1.00in
+    P0: Q1: How does the parser handle custom Hindi keywords?
+       Runs: 'Q1: How does the parser handle custom Hindi keywords?'(size=None, bold=None)
+    P1: A1: The Lexer scans custom lexemes (e.g. 'jabtak') and looks up keyword_mapping.json to attach canonical='while'. The Parser only checks the canonical identity, keeping the grammar completely decoupled and multilingual.
+       Runs: "A1: The Lexer scans custom lexemes (e.g. 'jabtak') and looks up keyword_mapping.json to attach canonical='while'. The Parser only checks the canonical identity, keeping the grammar completely decoupled and multilingual."(size=None, bold=None)
+  [Shape 4 TextFrame] left=0.80in, top=2.92in, w=11.73in, h=1.20in
+  [Shape 5 TextFrame] left=1.00in, top=3.00in, w=11.33in, h=1.00in
+    P0: Q2: What is the purpose of generating Three-Address Code before interpretation?
+       Runs: 'Q2: What is the purpose of generating Three-Address Code before interpretation?'(size=None, bold=None)
+    P1: A2: TAC flattens complex nested AST expressions into linear quadruples with temporary variables (t0, t1...) and jump labels, creating an explicit machine-independent IR ideal for optimization and VM dispatch.
+       Runs: 'A2: TAC flattens complex nested AST expressions into linear quadruples with temporary variables (t0, t1...) and jump labels, creating an explicit machine-independent IR ideal for optimization and VM dispatch.'(size=None, bold=None)
+  [Shape 6 TextFrame] left=0.80in, top=4.24in, w=11.73in, h=1.20in
+  [Shape 7 TextFrame] left=1.00in, top=4.32in, w=11.33in, h=1.00in
+    P0: Q3: How does the symbol table handle variable shadowing in nested blocks?
+       Runs: 'Q3: How does the symbol table handle variable shadowing in nested blocks?'(size=None, bold=None)
+    P1: A3: Each block creates a child Scope referencing its parent. Variable lookups search the innermost scope first and traverse parent pointers upwards, allowing inner variables to shadow outer symbols correctly.
+       Runs: 'A3: Each block creates a child Scope referencing its parent. Variable lookups search the innermost scope first and traverse parent pointers upwards, allowing inner variables to shadow outer symbols correctly.'(size=None, bold=None)
+  [Shape 8 TextFrame] left=0.80in, top=5.56in, w=11.73in, h=1.20in
+  [Shape 9 TextFrame] left=1.00in, top=5.64in, w=11.33in, h=1.00in
+    P0: Q4: How does panic-mode error recovery prevent cascading syntax errors?
+       Runs: 'Q4: How does panic-mode error recovery prevent cascading syntax errors?'(size=None, bold=None)
+    P1: A4: When a syntax error occurs, the parser logs the error and discards subsequent tokens until it encounters a synchronization boundary (semicolon, closing brace, or statement-initiating keyword).
+       Runs: 'A4: When a syntax error occurs, the parser logs the error and discards subsequent tokens until it encounters a synchronization boundary (semicolon, closing brace, or statement-initiating keyword).'(size=None, bold=None)
+
+==============================
+SLIDE 15
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.62in, w=11.73in, h=0.65in
+    P0: GitHub Repository & Deliverables Summary
+       Runs: 'GitHub Repository & Deliverables Summary'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.27in, w=5.20in, h=5.30in
+  [Shape 3 TextFrame] left=1.00in, top=1.75in, w=4.80in, h=5.00in
+    P0: Repository & Version Control
+       Runs: 'Repository & Version Control'(size=None, bold=None)
+    P1: • GitHub Repository: https://github.com/Udbhav-Tiwari16/EduScript
+       Runs: '• '(size=13.0, bold=True), 'GitHub'(size=13.0, bold=True), ' Repository: '(size=13.0, bold=True), 'https://github.com/Udbhav-Tiwari16/EduScript'(size=13.0, bold=False)
+    P2: • Active Branch: main (Commit: c7fd7f7)
+       Runs: '• Active Branch: '(size=13.0, bold=True), 'main (Commit: c7fd7f7)'(size=13.0, bold=False)
+    P3: • Final Project Deliverables: Complete Working Source Code, Test Suite (12 test cases), Test Results (100% pass), Terminal Screenshots, Final Presentation (.pptx), User Guide.
+       Runs: '• Final Project Deliverables: '(size=13.0, bold=True), 'Complete Working Source Code, Test Suite (12 test cases), Test Results (100% pass), Terminal Screenshots, Final Presentation (.'(size=13.0, bold=False), 'pptx'(size=13.0, bold=False), '), User Guide.'(size=13.0, bold=False)
+    P4: • Individual Project: Sole author and developer: Udbhav Tiwari (Reg No: 24BCT0328).
+       Runs: '• Individual Project: '(size=13.0, bold=True), 'Sole author and developer: '(size=13.0, bold=False), 'Udbhav'(size=13.0, bold=False), ' '(size=13.0, bold=False), 'Tiwari'(size=13.0, bold=False), ' ('(size=13.0, bold=False), 'Reg'(size=13.0, bold=False), ' No: 24BCT0328).'(size=13.0, bold=False)
+  [Shape 4 TextFrame] left=6.20in, top=1.27in, w=6.33in, h=5.30in
+  [Shape 5 Picture] left=6.43in, top=2.51in, w=5.88in, h=0.94in
+
+==============================
+SLIDE 16
+==============================
+  [Shape 0 TextFrame] left=0.80in, top=0.40in, w=11.73in, h=0.06in
+  [Shape 1 TextFrame] left=0.80in, top=0.67in, w=11.73in, h=0.65in
+    P0: Conclusion & Future Enhancements
+       Runs: 'Conclusion & Future Enhancements'(size=None, bold=None)
+  [Shape 2 TextFrame] left=0.80in, top=1.32in, w=5.60in, h=5.30in
+  [Shape 3 TextFrame] left=1.00in, top=1.75in, w=5.20in, h=5.00in
+    P0: Project Summary & Conclusion
+       Runs: 'Project Summary & Conclusion'(size=None, bold=None)
+    P1: • Comprehensive Implementation: EduScript fulfills all theoretical and practical requirements of a complete compiler/interpreter pipeline.
+       Runs: '• Comprehensive Implementation: '(size=13.0, bold=True), 'EduScript fulfills all theoretical and practical requirements of a complete compiler/interpreter pipeline.'(size=13.0, bold=False)
+    P2: • Educational & Modular: Every stage is decoupled, inspectable, and built in pure Python standard library for maximum readability.
+       Runs: '• Educational & Modular: '(size=13.0, bold=True), 'Every stage is decoupled, inspectable, and built in pure Python standard library for maximum readability.'(size=13.0, bold=False)
+    P3: • Fully Verified: 100% test pass rate across 12 automated test cases covering valid programs, custom keywords, and error handling.
+       Runs: '• Fully Verified: '(size=13.0, bold=True), '100% test pass rate across 12 automated test cases covering valid programs, custom keywords, and error handling.'(size=13.0, bold=False)
+    P4: • Ready for Evaluation: Complete source code committed and pushed to GitHub repository.
+       Runs: '• Ready for Evaluation: '(size=13.0, bold=True), 'Complete source code committed and pushed to GitHub repository.'(size=13.0, bold=False)
+  [Shape 4 TextFrame] left=6.80in, top=1.32in, w=5.73in, h=5.30in
+  [Shape 5 TextFrame] left=7.00in, top=1.75in, w=5.33in, h=5.00in
+    P0: Future Scope & Enhancements
+       Runs: 'Future Scope & Enhancements'(size=None, bold=None)
+    P1: • TAC Optimization Passes: Dead code elimination, constant folding, constant propagation, and common subexpression elimination (CSE).
+       Runs: '• TAC Optimization Passes: '(size=13.0, bold=True), 'Dead code elimination, constant folding, constant propagation, and common subexpression elimination (CSE).'(size=13.0, bold=False)
+    P2: • Bytecode / Assembly Target: Compiling TAC to Python bytecode (.pyc) or LLVM IR for native machine execution.
+       Runs: '• Bytecode / Assembly Target: '(size=13.0, bold=True), 'Compiling TAC to Python bytecode (.pyc) or LLVM IR for native machine execution.'(size=13.0, bold=False)
+    P3: • User-Defined Functions & Arrays: Expanding runtime stack frames to support recursive function calls and array data structures.
+       Runs: '• User-Defined Functions & Arrays: '(size=13.0, bold=True), 'Expanding runtime stack frames to support recursive function calls and array data structures.'(size=13.0, bold=False)
+    P4: • Interactive Web Playground: WebAssembly frontend allowing students to visualize AST trees and TAC steps interactively in a browser.
+       Runs: '• Interactive Web Playground: '(size=13.0, bold=True), 'WebAssembly frontend allowing students to visualize AST trees and TAC steps interactively in a browser.'(size=13.0, bold=False)
